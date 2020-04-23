@@ -1,0 +1,29 @@
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+
+        driver: 'pdo_pgsql'
+        server_version: '12.1'
+        charset: utf8
+        default_table_options:
+            charset: utf8
+            collate:
+
+        types:
+            #Shared
+            datetime_immutable: 'App\EntityType\DateTimeType'
+
+            #User
+            user_user_id: 'App\EntityType\UserIdType'
+            user_user_email: 'App\EntityType\EmailType'
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        auto_mapping: true
+        mappings:
+            Identity:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/config/mapping/orm'
+                prefix: 'App\Entity'
+                alias: Identity

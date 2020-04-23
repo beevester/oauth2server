@@ -1,0 +1,66 @@
+<?php
+
+namespace App\Controller;
+
+use App\Model\ConfirmRegistrationHandler;
+use App\Model\ExecuteRegisterConfirmation;
+use App\Model\ExecuteRegisterUser;
+use App\View\RegisterUserHandler;
+use Exception as ExceptionAlias;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\SerializerInterface;
+
+class RegistraionController extends AbstractController
+{
+    /**
+     * @var SerializerInterface
+     */
+    private $serializer;
+
+    /**
+     * RegistraionController constructor.
+     * @param SerializerInterface $serializer
+     */
+    public function __construct(SerializerInterface $serializer)
+    {
+        $this->serializer = $serializer;
+    }
+
+    /**
+     * @Route("",name="user_create",methods={"POST"})
+     * @param Request $request
+     * @param RegisterUserHandler $handler
+     * @return JsonResponse
+     */
+    public function registration(Request $request, RegisterUserHandler $handler): JsonResponse
+    {
+        /** @var ExecuteRegisterUser $data */
+        $data = $this->serializer->deserialize($request->getContent(), ExecuteRegisterUser::class, 'json');
+
+        $handler->handle($data);
+
+        return $this->json([], JsonResponse::HTTP_CREATED);
+    }
+
+    /**
+     * @Route("/confirm", name="confirm_token", methods={"POST"})
+     * @param Request $request
+     * @param ConfirmRegistrationHandler $handler
+     * @return JsonResponse
+     * @throws ExceptionAlias
+     */
+    public function confirm(Request $request, ConfirmRegistrationHandler $handler): JsonResponse
+    {
+        /** @var ExecuteRegisterConfirmation $data */
+        $data = $this->serializer->deserialize(
+            $request->getContent(),
+            ExecuteRegisterConfirmation::class, 'json');
+
+        $handler->handle($data);
+
+        return $this->json([$request->getContent()], JsonResponse::HTTP_CREATED);
+    }
+}
