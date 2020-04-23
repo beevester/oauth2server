@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a3644f5-4a1b-4669-9ff3-ebe7f5bb1746" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/Tests/OAuthControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Tests/OAuthFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Tests/ProfileControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend" beforeDir="false" afterPath="$PROJECT_DIR$/backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Tests/RegistraionControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Tests/RegistraionControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/mapping/orm/Entity.Object.Name.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/mapping/orm/Name.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Events/JsonBodyParserSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Events/JsonTranformerListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Model/CreateUserHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Model/CreateUserHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/mapping/orm/Entity.Object.ConfirmationToken.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/mapping/orm/Object.ConfirmationToken.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/mapping/orm/Name.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/mapping/orm/Object.Name.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/packages/trikoder_oauth2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/packages/trikoder_oauth2.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +40,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="140">
+              <caret line="311" column="32" lean-forward="true" selection-start-line="311" selection-start-column="32" selection-end-line="311" selection-end-column="32" />
               <folding>
                 <element signature="e#32#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Object.Status.orm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/packages/doctrine.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/services.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="32" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/Interfaces/CheckerIdInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Object.Name.orm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Tests/ProfileControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Tests/OAuthControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Tests/OAuthFixture.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-428">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding>
+                <element signature="e#110#150#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,21 +141,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>changeO</find>
+      <find>create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/src/Model/ChangeUserPasswordHandler.php" />
-        <option value="$PROJECT_DIR$/backend/src/Controller/ProfileController.php" />
-        <option value="$PROJECT_DIR$/backend/.env" />
-        <option value="$PROJECT_DIR$/backend/src/EntityType/DateTimeType.php" />
-        <option value="$PROJECT_DIR$/backend/config/packages/doctrine.yaml" />
-        <option value="$PROJECT_DIR$/backend/config/routes.yaml" />
-        <option value="$PROJECT_DIR$/backend/config/bundles.php" />
         <option value="$PROJECT_DIR$/backend/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/backend/src/Model/RegisterUserHandler.php" />
         <option value="$PROJECT_DIR$/backend/src/Model/ExecuteCreateUser.php" />
@@ -86,7 +164,6 @@
         <option value="$PROJECT_DIR$/backend/src/Events/UserNameWasChanged.php" />
         <option value="$PROJECT_DIR$/backend/src/Events/UserEmailWasChanged.php" />
         <option value="$PROJECT_DIR$/backend/src/Entity/Object/Email.php" />
-        <option value="$PROJECT_DIR$/backend/src/Entity/Object/Name.php" />
         <option value="$PROJECT_DIR$/backend/src/Entity/Object/Status.php" />
         <option value="$PROJECT_DIR$/backend/src/Entity/Object/ConfirmationToken.php" />
         <option value="$PROJECT_DIR$/backend/src/Interfaces/EventDispatcherInterface.php" />
@@ -110,15 +187,24 @@
         <option value="$PROJECT_DIR$/docker-compose.docker" />
         <option value="$PROJECT_DIR$/frontend/node.docker" />
         <option value="$PROJECT_DIR$/backend/src/Model/CreateUserHandler.php" />
-        <option value="$PROJECT_DIR$/backend/config/services.yaml" />
         <option value="$PROJECT_DIR$/backend/src/Events/JsonTranformerListener.php" />
         <option value="$PROJECT_DIR$/backend/config/mapping/orm/Name.orm.xml" />
-        <option value="$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml" />
+        <option value="$PROJECT_DIR$/backend/.env" />
+        <option value="$PROJECT_DIR$/backend/config/packages/trikoder_oauth2.yaml" />
+        <option value="$PROJECT_DIR$/backend/src/Entity/Object/Name.php" />
         <option value="$PROJECT_DIR$/backend/Tests/RegistraionControllerTest.php" />
+        <option value="$PROJECT_DIR$/backend/Tests/ProfileControllerTest.php" />
+        <option value="$PROJECT_DIR$/backend/Tests/OAuthControllerTest.php" />
+        <option value="$PROJECT_DIR$/backend/Tests/OAuthFixture.php" />
+        <option value="$PROJECT_DIR$/backend/config/mapping/orm/Object.Status.orm.xml" />
+        <option value="$PROJECT_DIR$/backend/config/packages/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/backend/config/services.yaml" />
+        <option value="$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml" />
         <option value="$PROJECT_DIR$/backend/src/Entity/User.php" />
       </list>
     </option>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/backend/vendor/symfony/flex" />
@@ -247,14 +333,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/maker-bundle" />
     </include_path>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1609" />
@@ -285,6 +365,27 @@
               <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
               <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -293,6 +394,40 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assessment_morecorp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assessment_morecorp" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,9 +438,9 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit 6+" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/Tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -319,11 +454,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\assessment_morecorp\backend\Tests" />
       <recent name="C:\wamp\www\assessment_morecorp\frontend" />
       <recent name="C:\wamp\www\assessment_morecorp\backend" />
       <recent name="C:\wamp\www\assessment_morecorp\backend\src\Events" />
       <recent name="C:\wamp\www\assessment_morecorp\backend\src\Services" />
-      <recent name="C:\wamp\www\assessment_morecorp\backend\var\oauth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\assessment_morecorp" />
@@ -344,7 +479,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.RegistraionControllerTest.testSuccessRegistration">
+  <component name="RunManager" selected="PHP Built-in Web Server.web server">
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -404,7 +539,7 @@
       <workItem from="1587561141648" duration="4086000" />
       <workItem from="1587571623491" duration="1782000" />
       <workItem from="1587580930845" duration="20309000" />
-      <workItem from="1587624644749" duration="20201000" />
+      <workItem from="1587624644749" duration="23638000" />
     </task>
     <servers />
   </component>
@@ -433,27 +568,31 @@
     <history-entry file="RegistraionControllerTest_testSuccessRegistration - 2020.04.23 at 13h 50m 23s.xml">
       <configuration name="RegistraionControllerTest.testSuccessRegistration" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="RegistraionControllerTest_testSuccessRegistration - 2020.04.23 at 14h 36m 48s.xml">
+      <configuration name="RegistraionControllerTest.testSuccessRegistration" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47551000" />
+    <option name="totallyTimeSpent" value="50988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1607" y="-7" width="1294" height="694" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28596804" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28596804" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -491,96 +630,6 @@
     <SUITE FILE_PATH="coverage/assessment_morecorp$RegistraionControllerTest.xml" NAME="RegistraionControllerTest Coverage Results" MODIFIED="1587600788192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/src/Query/UnqiuenessCheckerById.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#31#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/Name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/Status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/UserId.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/ConfirmationToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/Email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Interfaces/RecordsEvents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Interfaces/AggregateId.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Events/AggregateRoot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Security/ProfileChecker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Security/ProfileByEmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Security/ProfileById.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#33#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/Security/ProfileProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -782,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/Events/JsonTranformerListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -799,23 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/packages/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Entity.Object.Status.orm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Tests/RegistraionControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -836,34 +865,148 @@
     <entry file="file://$PROJECT_DIR$/backend/.env.test">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/vendor/symfony/framework-bundle/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="360" column="23" selection-start-line="360" selection-start-column="23" selection-end-line="360" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Controller/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#34#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Model/GetProfileHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Views/ProfileDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Object/Name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="80">
           <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/packages/trikoder_oauth2.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Object.ConfirmationToken.orm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Tests/RegistraionControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1664">
+          <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Tests/ProfileControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Tests/OAuthControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Tests/OAuthFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="e#110#150#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Object.Name.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Interfaces/CheckerIdInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="32" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Object.Status.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/User.orm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Entity.Object.ConfirmationToken.orm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/mapping/orm/Name.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="208">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="140">
+          <caret line="311" column="32" lean-forward="true" selection-start-line="311" selection-start-column="32" selection-end-line="311" selection-end-column="32" />
           <folding>
             <element signature="e#32#72#0#PHP" expanded="true" />
           </folding>

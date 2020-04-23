@@ -14,7 +14,9 @@ trikoder_oauth2:
         auth_code_ttl: PT10M
 
     resource_server:
-        public_key: '%env(OAUTH2_PUBLIC_KEY)%'                       # Change this
+#        public_key: '%env(OAUTH2_PUBLIC_KEY)%'                       # Change this
+        public_key: 'C:\wamp\www\assessment_morecorp\backend\var\oauth\public.key'                       # Change this
+
 
     scopes: ['common']
 
