@@ -3,8 +3,8 @@ doctrine:
         url: '%env(resolve:DATABASE_URL)%'
 
         driver: 'pdo_pgsql'
-        server_version: '12.1'
-        charset: utf8
+        server_version: '12'
+        charset: utf8mb4
         default_table_options:
             charset: utf8
             collate:

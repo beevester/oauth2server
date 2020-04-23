@@ -29,5 +29,10 @@ services:
     App\Services\RandComfirmTokenizer:
         arguments: ['PT1h']
 
-    App\Interfaces\CheckerIdInterface: ~
+    app.interfaces.checkerId:
+        class: App\Interfaces\CheckerIdInterface
+
+
+    App\Interfaces\CheckerIdInterface: '@app.interfaces.checkerId'
     App\Interfaces\PasswordEncodedInterface: ~
+

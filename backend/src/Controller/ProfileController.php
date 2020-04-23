@@ -40,7 +40,7 @@ class ProfileController extends AbstractController
         /** @var ProfileByEmail|null $user */
         $user = $this->getUser();
         if (!$user) {
-            throw new Exception('User not found');
+            return $this->json(['Error' => 'User not found']);
         }
 
         $query = new GetProfileById((string)$user->getId());

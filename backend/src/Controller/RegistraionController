@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Model\ConfirmRegistrationHandler;
 use App\Model\ExecuteRegisterConfirmation;
 use App\Model\ExecuteRegisterUser;
-use App\View\RegisterUserHandler;
+use App\Model\RegisterUserHandler;
 use Exception as ExceptionAlias;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;

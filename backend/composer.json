@@ -22,7 +22,7 @@
         "symfony/security-bundle": "5.0.*",
         "symfony/serializer-pack": "^1.0",
         "symfony/yaml": "5.0.*",
-        "trikoder/oauth2-bundle": "dev-master"
+        "trikoder/oauth2-bundle": "^3.1"
     },
     "require-dev": {
         "ext-json": "*",

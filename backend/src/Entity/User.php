@@ -41,7 +41,7 @@ class User extends AggregateRoot
     /**
      * @var DateTime
      */
-    public $createOn;
+    public $createdOn;
 
     protected ?ConfirmationToken $confirmToken = null;
     /**
@@ -87,7 +87,7 @@ class User extends AggregateRoot
         $this->name = $name;
         $this->password = $password;
         $this->status = $status;
-        $this->createOn = DateTime::now();
+        $this->createdOn = DateTime::now();
     }
 
     /**
@@ -307,9 +307,9 @@ class User extends AggregateRoot
     /**
      * @return DateTime
      */
-    public function getCreateOn(): DateTime
+    public function getCreatedOn(): DateTime
     {
-        return $this->createOn;
+        return $this->createdOn;
     }
 
     public function clearRecordedEvent(): void

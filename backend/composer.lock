@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e5edda759c1355bdb2c6a7b57cc82a3",
+    "content-hash": "f2829f3d50be39eae9f4c0071c59a537",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -5505,16 +5505,16 @@
         },
         {
             "name": "trikoder/oauth2-bundle",
-            "version": "dev-master",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trikoder/oauth2-bundle.git",
-                "reference": "e778a58517ba98ea166676a0d5c5c443bbcddbc2"
+                "reference": "73cddab208efa823ef516b62bc5f1758aea609de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trikoder/oauth2-bundle/zipball/e778a58517ba98ea166676a0d5c5c443bbcddbc2",
-                "reference": "e778a58517ba98ea166676a0d5c5c443bbcddbc2",
+                "url": "https://api.github.com/repos/trikoder/oauth2-bundle/zipball/73cddab208efa823ef516b62bc5f1758aea609de",
+                "reference": "73cddab208efa823ef516b62bc5f1758aea609de",
                 "shasum": ""
             },
             "require": {
@@ -5545,7 +5545,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
@@ -5579,7 +5579,7 @@
             "keywords": [
                 "oauth2"
             ],
-            "time": "2020-04-10T21:22:01+00:00"
+            "time": "2020-04-10T16:45:57+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -8198,7 +8198,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "trikoder/oauth2-bundle": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

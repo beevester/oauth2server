@@ -5,12 +5,12 @@
                    https://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
     <entity name="App\Entity\User" table="users">
         <id name="id" type="user_user_id"/>
-<!--        <embedded name="name" class="App\Entity\Object\Name"/>-->
-<!--        <field name="email" type="user_user_email" unique="true" nullable="true"/>-->
-<!--        <field name="password"/>-->
-<!--        <embedded name="status" class="App\Entity\Object\Status"/>-->
-<!--        <embedded name="confirmToken" class="App\Entity\Object\ConfirmationToken"/>-->
+        <embedded name="name" class="App\Entity\Object\Name"/>
+        <field name="email" type="user_user_email" unique="true" nullable="true"/>
+        <field name="password"/>
+        <embedded name="status" class="App\Entity\Object\Status"/>
+        <embedded name="confirmToken" class="App\Entity\Object\ConfirmationToken"/>
         <field name="changedOn" type="datetime_immutable" nullable="true"/>
-        <field name="createdOn" type="datetime_immutable"/>
+        <field name="createdOn" type="datetime_immutable" nullable="true"/>
     </entity>
 </doctrine-mapping>
