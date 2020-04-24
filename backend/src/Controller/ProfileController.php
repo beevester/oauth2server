@@ -20,6 +20,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 
+/**
+ * @Route("/api/profile")
+ */
 class ProfileController extends AbstractController
 {
     private SerializerInterface $serializer;
@@ -30,7 +33,7 @@ class ProfileController extends AbstractController
     }
 
     /**
-     * @Route("my", name="user_profile", methods={"GET"})
+     * @Route("", name="user_profile", methods={"GET"})
      * @param GetProfileHandler $handler
      * @return Response
      * @throws \Exception

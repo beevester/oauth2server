@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace App\Model;
 
 use App\Interfaces\PasswordEncodedInterface;
 use InvalidArgumentException as InvalidArgumentExceptionAlias;

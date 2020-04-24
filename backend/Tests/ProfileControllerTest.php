@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 class ProfileControllerTest extends TestCase
 {
 
-    private const URI = '/api/v1/profile';
+    private const URI = '/api/profile';
 
     /**
      * @test

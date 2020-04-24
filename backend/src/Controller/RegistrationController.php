@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Model\ConfirmRegistrationHandler;
+use App\Model\CreateUserHandler;
+use App\Model\ExecuteCreateUser;
 use App\Model\ExecuteRegisterConfirmation;
 use App\Model\ExecuteRegisterUser;
 use App\Model\RegisterUserHandler;
@@ -13,7 +15,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 
-class RegistraionController extends AbstractController
+/**
+ * @Route("/api/signup")
+ */
+class RegistrationController extends AbstractController
 {
     /**
      * @var SerializerInterface
@@ -21,7 +26,7 @@ class RegistraionController extends AbstractController
     private $serializer;
 
     /**
-     * RegistraionController constructor.
+     * RegistrationController constructor.
      * @param SerializerInterface $serializer
      */
     public function __construct(SerializerInterface $serializer)
@@ -30,15 +35,15 @@ class RegistraionController extends AbstractController
     }
 
     /**
-     * @Route("",name="user_create",methods={"POST"})
+     * @Route("", name="user_create")
      * @param Request $request
      * @param RegisterUserHandler $handler
      * @return JsonResponse
      */
-    public function registration(Request $request, RegisterUserHandler $handler): JsonResponse
+    public function registration(Request $request, CreateUserHandler $handler): JsonResponse
     {
         /** @var ExecuteRegisterUser $data */
-        $data = $this->serializer->deserialize($request->getContent(), ExecuteRegisterUser::class, 'json');
+        $data = $this->serializer->deserialize($request->getContent(), ExecuteCreateUser::class, 'json');
 
         $handler->handle($data);
 

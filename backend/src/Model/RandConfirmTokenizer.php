@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace App\Model;
 
 use App\Entity\Object\ConfirmationToken;
 use App\Entity\Object\DateTime;

@@ -13,7 +13,7 @@ security:
             pattern: ^/token$
             security: false
         api:
-            pattern: ^/
+            pattern: ^/api
             security: true
             anonymous: lazy
             stateless: true
@@ -23,8 +23,8 @@ security:
             user_checker: App\Security\ProfileChecker
 
     access_control:
-#        - { path: ^/api/?$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-#        - { path: ^/api/signup, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-#        - { path: ^/api/confirm, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-#        - { path: ^/api/oauth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-#        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/?$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/signup, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/confirm, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/oauth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }

@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace App\Tests\Ui\Http\Rest\Controller\V1\IdentityAccess\Access\OAuth;
+namespace App\Tests;
 
 use App\Entity\Object\ConfirmationToken;
 use App\Entity\Object\DateTime;

@@ -38,6 +38,7 @@ class CreateUserHandler
      */
     public function handle(ExecuteCreateUser $command): UserId
     {
+        var_dump((string)$command->password);
         $user = User::create(
             $userId = $this->repository->nextIdentity(),
             Name::fromString($command->firstName, $command->lastName),
