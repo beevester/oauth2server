@@ -41,7 +41,7 @@ class UserWasCreated implements DomainEvent
     /**
      * @return AggregateId
      */
-    public function getAggregatedId(): AggregateId
+    public function getAggregateId(): AggregateId
     {
         // TODO: Implement getAggregatedId() method.
     }

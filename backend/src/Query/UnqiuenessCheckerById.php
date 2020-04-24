@@ -5,9 +5,10 @@ namespace App\Query;
 
 
 use App\Entity\Object\UserId;
+use App\Interfaces\CheckerIdInterface;
 use Doctrine\DBAL\Connection;
 
-class UnqiuenessCheckerById
+class UnqiuenessCheckerById implements CheckerIdInterface
 {
     private Connection $connection;
 

@@ -4,7 +4,7 @@ doctrine:
 
         driver: 'pdo_pgsql'
         server_version: '12'
-        charset: utf8mb4
+        charset: utf8
         default_table_options:
             charset: utf8
             collate:

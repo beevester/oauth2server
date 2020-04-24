@@ -5,7 +5,7 @@ services:
       context: ./frontend
       dockerfile: server.docker
     volumes:
-      - ./backend:/var/www/frontend
+      - ./frontend:/var/www/frontend
     depends_on:
       - backend-php-fpm
     ports:

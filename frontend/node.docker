@@ -6,4 +6,4 @@ VOLUME ["/var/www/frontend"]
 
 RUN npm install -g @vue/cli
 
-RUM npm build -g @vue/cli
+RUN npm build

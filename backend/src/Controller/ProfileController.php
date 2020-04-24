@@ -30,7 +30,7 @@ class ProfileController extends AbstractController
     }
 
     /**
-     * @Route("", name="user_profile", methods={"GET"})
+     * @Route("my", name="user_profile", methods={"GET"})
      * @param GetProfileHandler $handler
      * @return Response
      * @throws \Exception

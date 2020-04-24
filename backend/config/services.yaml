@@ -22,6 +22,9 @@ services:
     App\Controller\:
         resource: '../src/Controller'
 
+    App\Interfaces\:
+        resource: '../src/Interfaces'
+
     App\Events\JsonTranformerListener:
         tags:
             - { name: 'kernel.event_listener', event: 'kernel.request', method: 'onKernelRequest', priority: 100 }
@@ -29,10 +32,6 @@ services:
     App\Services\RandComfirmTokenizer:
         arguments: ['PT1h']
 
-    app.interfaces.checkerId:
-        class: App\Interfaces\CheckerIdInterface
-
-
-    App\Interfaces\CheckerIdInterface: '@app.interfaces.checkerId'
-    App\Interfaces\PasswordEncodedInterface: ~
-
+    App\Security\Events\UserResolverListener:
+        tags:
+            - { name: kernel.event_listener, event: trikoder.oauth2.user_resolve, method: onUserResolve }

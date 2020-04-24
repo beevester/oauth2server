@@ -19,7 +19,7 @@
             }
         },
         mounted() {
-            axios.get('/api/v1').then(response => {
+            axios.get('/api').then(response => {
                 this.name = response.data.name;
                 this.version = response.data.version;
             });
